@@ -1,0 +1,68 @@
+﻿body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button {
+    width: 105px;
+    height: 40px;
+    background-color: #ff8d00;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+}
+a {
+    position: relative;
+    top: 23px;
+    background-color: #ff8d00;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding-left: 24px;
+    border-radius: 10px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffa93e;
+    transition: 0.3s;
+}
+.header, form{
+    width: 100%;
+    text-align: center;
+}
+input, select {
+    width: 300px;
+    height: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
+    outline: none;
+}
+#resultDiv {
+    display: inline-block;
+    border: 1px solid #c3c3c3;
+}
+select {
+    cursor: pointer;
+}
+.GetRating {
+    margin-bottom: 5px;
+}
+.GetRating label {
+    display: block;
+    font-size: 16px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

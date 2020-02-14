@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="TaskStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Форма ввода</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <div class="match">
+                        <h1>Матч</h1>
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Дата матча
+                                </div>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    количество побед
+                                </div>
+                                <input id="winCount" type="text">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    игрок 1
+                                </div>
+                                <input id="pl-input-1" type="text" onchange="AddName();">
+                            </div>
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    игрок 2
+                                </div>
+                                <input id="pl-input-2" type="text" onchange="AddName();">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-part">
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Длина партии
+                                </div>
+                                <select id="GameMode" onclick="Game();">
+                                    <option value="Короткая (11-12)">Короткая (11-12)</option>
+                                    <option value="Длинная (21-22)">Длинная (21-22)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Игрок 1
+                                </div>
+                                <input id="pl-output-1" type="text">
+
+                            </div>
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Игрок 2
+                                </div>
+                                <input id="pl-output-2" type="text">
+
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Счет игрока 1
+                                </div>
+                                <select id="Score1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+
+                                </select>
+                            </div>
+                            <div class="input-block">
+                                <div class="input-block-header">
+                                    Счет игрока 2
+                                </div>
+                                <select id="Score2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="input-row-score-row">
+                    <button class="add-score-button" onclick="AddScore();">Добавить счет</button> <br>
+                    <table id="ScoreTable" border="1">
+                        <tr>
+                            <th>Длина партии</th>
+                            <th>Счет игрока 1</th>
+                            <th>Счет игрока 2</th>
+                            <th>Игрок 1</th>
+                            <th>Игрок 2</th>
+                            <th>Количество побед</th>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/remove-preload.js"></script>
+    <script src="Score.js"></script>
+</body>
+</html>
